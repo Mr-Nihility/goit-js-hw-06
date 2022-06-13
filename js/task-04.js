@@ -8,7 +8,7 @@
 
 */
 const counterValue = document.querySelector("#value");
-console.log(counterValue.textContent);
+// console.log(counterValue.textContent);
 
 const decrementEl = document.querySelector('[data-action="decrement"]');
 

@@ -24,14 +24,6 @@ button {
 }
 
 .gallery {
-  display: grid;
-}
-
-.gallery__item {
-  width: calc(100% / 3);
-}
-
-.gallery__item a {
-  width: 100%;
-  object-fit: fill;
+  display: flex;
+  gap: 50px;
 }
