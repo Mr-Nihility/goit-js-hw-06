@@ -38,19 +38,14 @@ function getRandomHexColor() {
 }
 ref.createBtn.addEventListener("click", oneCresteBtnclick);
 
-function createMakeUp() {
-  return document.createElement("div");
-}
-
 function oneCresteBtnclick() {
   ref.holder.innerHTML = "";
-  for (let index = 0; index < ref.input.value; index++) {
-    let div = createMakeUp();
-    div.style.width = `${30 + index * 10}px`;
-    div.style.height = `${30 + index * 10}px`;
-    div.style.backgroundColor = getRandomHexColor();
 
-    ref.holder.append(div);
+  for (let index = 1; index <= ref.input.value; index++) {
+    let div = `<div style="width: ${30 + index * 10}px; height: ${
+      30 + index * 10
+    }px; background-color: ${getRandomHexColor()};"></div>`;
+    ref.holder.insertAdjacentHTML("beforeend", div);
   }
 }
 
