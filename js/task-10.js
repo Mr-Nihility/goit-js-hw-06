@@ -42,8 +42,8 @@ function oneCresteBtnclick() {
   ref.holder.innerHTML = "";
 
   for (let index = 1; index <= ref.input.value; index++) {
-    let div = `<div style="width: ${30 + index * 10}px; height: ${
-      30 + index * 10
+    let div = `<div style="width: ${20 + index * 10}px; height: ${
+      20 + index * 10
     }px; background-color: ${getRandomHexColor()};"></div>`;
     ref.holder.insertAdjacentHTML("beforeend", div);
   }
