@@ -11,7 +11,7 @@ const inputRef = document.querySelector("#validation-input");
 function onInputBlur(event) {
   const objEvent = event.currentTarget;
 
-  objEvent.dataset.length === objEvent.value.length
+  Number(objEvent.dataset.length) === objEvent.value.length
     ? objEvent.classList.add("valid")
     : objEvent.classList.add("invalid");
 }
